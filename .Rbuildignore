@@ -1,0 +1,4 @@
+^renv$
+^renv\.lock$
+^vtree\.Rproj$
+^\.Rproj\.user$
