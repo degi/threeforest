@@ -1,0 +1,15 @@
+# (uncomment to add a dependency)
+dependencies:
+ - name: threejs
+   version: 156
+   src: "htmlwidgets/lib"
+   script:
+    - three.min.js
+    - vtree_lib.js
+    - OrbitControlsMod.js
+    - lil-gui.esm.js
+    - TGALoaderMod.js
+    - Stats.js
+
+   stylesheet:   
+    - vtree.css

@@ -1,0 +1,20 @@
+.lil-gui { 
+    --title-background-color: #FF643b00;
+    --title-text-color: #9a6c1d;
+	--background-color: #ff744c00;
+    --text-color: #712809;
+    --width: 150px;
+    --widget-color: #ceb595;
+    --hover-color: #d27474;
+}
+
+body {
+    padding: 0px !important;
+}
+  
+#htmlwidget_container {
+    top: 0px !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    left: 0px !important;
+}
