@@ -1,6 +1,6 @@
 #' The widget for displaying trees in 3D
 #'
-#' This widget using THREEJS library for 3D visualization
+#' This widget using threejs library for the 3D visualization
 #'
 #' @import htmlwidgets
 #'

@@ -1,12 +1,15 @@
 Package: threeforest
-Title: What the Package Does (One Line, Title Case)
+Title: Create and display trees in 3D visualization
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Degi Harja", "Asmara", , "degiharja@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6079-1305"))
+Description: The package generate 3D object of trees and display it on the widget.
+    This tree object is further used for the tree growth modeling of FORCASTREE
+URL: https://github.com/degi/threeforest
+BugReports: https://github.com/degi/threeforest/issues
+License: `use_gpl3_license()` 
+Imports: htmlwidgets
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
