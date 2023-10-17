@@ -1,0 +1,15 @@
+dependencies:
+ - name: threejs
+   version: 156
+   src: "htmlwidgets/lib"
+   script:
+    - three.min.js
+    - forest.js
+    - OrbitControlsMod.js
+    - lil-gui.esm.js
+    - TGALoaderMod.js
+    - Stats.js
+
+   stylesheet:   
+    - forest.css
+

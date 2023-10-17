@@ -1,4 +1,2 @@
-^renv$
-^renv\.lock$
-^vtree\.Rproj$
+^threeforest\.Rproj$
 ^\.Rproj\.user$
