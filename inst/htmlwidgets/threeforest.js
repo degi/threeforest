@@ -4,16 +4,15 @@ HTMLWidgets.widget({
   type: "output",
 
   factory: function (el, width, height) {
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    // this.renderer = new THREE.WebGLRenderer({
-    //   antialias: AA,
-    //   powerPreference: "high-performance",
-    // })
+    // const renderer = new THREE.WebGLRenderer({ antialias: true });
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      powerPreference: "high-performance",
+    });
     const scene = new THREE.Scene();
     var camera;
     return {
       renderValue: function (x) {
-
         //---------- Texture ------------------------
         const bark_type = "bark";
         const mat_long = get_branches_material(bark_type, 3);
@@ -106,7 +105,22 @@ HTMLWidgets.widget({
         animate();
 
         //--------- Setting UI --------------------
-        const gui = new GUI();
+        var gui;
+        if (x.setting.as_shiny_widget != null && x.setting.as_shiny_widget) {
+          gui = new GUI({ container: el.parentElement });
+        } else {
+          gui = new GUI();
+        }
+
+        if (x.setting.background != null) {
+          background_env.visible = x.setting.background;
+        }
+
+        if (x.setting.auto_rotate != null) {
+          controls.autoRotate = x.setting.auto_rotate;
+        }
+
+
         gui.close();
         gui.title("Setting");
         gui.add(controls, "autoRotate").name("Auto rotate");
@@ -121,7 +135,7 @@ HTMLWidgets.widget({
         camera.updateProjectionMatrix();
       },
 
-      scene: scene
+      scene: scene,
     };
   },
 });
